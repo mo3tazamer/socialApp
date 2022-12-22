@@ -376,7 +376,7 @@ class SocialCubit extends Cubit<SocialState> {
         }
       }).catchError((onError) {
         print(onError.toString());
-        emit(SocialGetAllUserErrorState());
+        emit(SocialGetAllUserErrorState());//212
 
       });
     }
