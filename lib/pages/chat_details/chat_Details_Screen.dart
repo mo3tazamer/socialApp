@@ -3,7 +3,7 @@ import 'package:socialapp/models/usermodel.dart';
 import 'package:icon_broken/icon_broken.dart';
 
 class ChatDetails extends StatelessWidget {
-  ChatDetails({required this.usersModel});
+  ChatDetails({super.key, required this.usersModel});
   UsersModel usersModel;
 
   @override
@@ -58,7 +58,7 @@ class ChatDetails extends StatelessWidget {
                       topStart: Radius.circular(10),
                       topEnd: Radius.circular(10),
                     )),
-                child: Text('hii'),
+                child: const Text('hii'),
               ),
             ),
             Align(
@@ -73,10 +73,10 @@ class ChatDetails extends StatelessWidget {
                       topStart: Radius.circular(10),
                       topEnd: Radius.circular(10),
                     )),
-                child: Text('hii'),
+                child: const Text('hii'),
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Container(
               clipBehavior: Clip.antiAliasWithSaveLayer,
               decoration: BoxDecoration(

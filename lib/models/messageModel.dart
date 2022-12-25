@@ -9,7 +9,7 @@ class MessageModel {
   MessageModel.fromjson(Map<String, dynamic>json){
 
     senderId = json['senderId'];
-    reciverId = json['reciverId'];
+    reciverId = json['receiverId'];
     Date = json['Date'];
     text = json['text'];
 
@@ -19,7 +19,7 @@ class MessageModel {
 
     return{
       'senderId': senderId,
-      'reciverId': reciverId,
+      'receiverId': reciverId,
       'Date': Date,
       'text': text,
 
